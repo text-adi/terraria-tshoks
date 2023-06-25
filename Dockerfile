@@ -9,7 +9,7 @@ WORKDIR /app
 RUN wget ${URL_TSHOCK} && unzip *.zip && mkdir -p TSHOCK && tar -xvf *.tar -C TSHOCK && ls -la TSHOCK
 
 
-FROM mcr.microsoft.com/dotnet/runtime:6.0
+FROM mcr.microsoft.com/dotnet/runtime:6.0-alpine
 
 LABEL authors="Text-ADI"
 LABEL homepage="https://github.com/text-adi"
